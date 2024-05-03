@@ -1,0 +1,43 @@
+#mytode-container{
+margin: 20px 400px;
+text-align: center;
+
+}
+.btn{
+    background-color: rgb(207, 54, 54);
+    color: beige;
+    padding-top: 7px;
+ width: 80px;
+ cursor: pointer;
+}
+.btnn{
+  background-color: rgb(207, 54, 54);
+  color: beige;
+ position: relative;
+ top: 20px;
+ left: 180px;
+ cursor: pointer;
+}
+.bttnn{
+  background-color: rgb(207, 54, 54);
+  color: beige;
+ position: relative;
+ top: 20px;
+ left: 180px;
+ cursor: pointer;
+}
+#field-text{
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    border: 2px solid;
+    margin-right: 5px;
+    box-shadow: 7px 8px 17px black;
+}
+#text-inp{
+  width: 300px;
+  padding-top: 20px;
+}
+.bttnnn{
+  display: none;
+}
