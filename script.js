@@ -1,18 +1,23 @@
 
 var input =document.getElementById("text-inp");
 var button =document.querySelector(".btn");
-
-button.addEventListener("click",function(){
+let div = document.getElementById("empty");
+button.addEventListener("click",()=>{
     if (input.value === "") {
          return false
     }
     else {
-    var result = '<div class = "remeve"><hr><input type="button" class="bttnn" value="remove"> <input type="button"class="btnn" value="save"></div>';
- 
-    let element = document.createElement("p");
-    var div = document.getElementById("empty").appendChild(element);
-    div.insertAdjacentHTML("beforebegin",result)
-    
-    element.innerHTML= input.value;}
+    let element = document.createElement("div")
+    element.innerHTML= input.value;
+    element.classList.toggle("a");
+   div.appendChild(element);
+let newBTN = document.createElement("button");
+newBTN.innerHTML = "remove";
+element.appendChild(newBTN);
+  newBTN.addEventListener("click",()=>{
+element.remove()
+  })
+    }
+input.value =""
 });
 
